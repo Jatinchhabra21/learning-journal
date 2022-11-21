@@ -1,0 +1,188 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+/* ---------------
+    nav
+----------------*/
+
+nav {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  color: #0e0e0e;
+  padding: 0 1.33em;
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.title:active,
+.title:visited {
+  color: #0e0e0e;
+}
+
+.title:active {
+  color: #0e0e0e;
+}
+
+nav img {
+  height: 100%;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  gap: 2em;
+}
+
+.link a {
+  text-decoration: none;
+  color: #090909;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.67rem;
+  font-weight: 600;
+}
+
+/* ---------------
+    latest post
+----------------*/
+
+.latest-post {
+  background: rgba(0, 0, 0, 0.3) url('../images/recent-article.png');
+  padding: 4.84em 1.12em 1.39em;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.latest-post .content-date {
+  font-size: 0.67rem;
+  color: white;
+}
+
+.latest-post .content-title {
+  font-size: 1.78rem;
+  font-weight: 700;
+  color: white;
+}
+
+.latest-post .content-body {
+  font-size: 0.89rem;
+  color: white;
+}
+
+/* ---------------
+    grid
+----------------*/
+
+.grid-container {
+  margin: 1.89em auto 2.23em;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 90%;
+  max-width: 900px;
+}
+
+.blog-img {
+  width: 100%;
+}
+
+.blog-post {
+  margin-bottom: 2.23em;
+}
+
+.content-date {
+  font-size: 0.78rem;
+}
+
+.content-title {
+  font-size: 1.34rem;
+  font-weight: 700;
+  color: #141414;
+}
+
+.content-body {
+  font-size: 0.78rem;
+  color: #505050;
+  max-width: 85vw;
+}
+
+.read-more {
+  display: block;
+  width: max-content;
+  margin: 0 auto 2.34em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 0.89rem;
+  color: #000;
+}
+
+.hide {
+  display: none;
+}
+
+/* ---------------
+    footer
+----------------*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #202020;
+  color: #ececec;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.footer-title {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.67rem;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+}
+
+.footer-subtitle {
+  color: #d7d7d7;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.67rem;
+}
+
+/* ---------------
+    media queries
+----------------*/
+
+@media (min-width: 480px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .blog-post {
+    flex: 1 40%;
+  }
+
+  .hide {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-post {
+    flex-basis: 25%;
+  }
+}
