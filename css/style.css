@@ -25,7 +25,8 @@ nav {
 }
 
 .title:active,
-.title:visited {
+.title:visited,
+.title:after {
   color: #0e0e0e;
 }
 
@@ -64,6 +65,9 @@ nav img {
   padding: 4.84em 1.12em 1.39em;
   background-size: cover;
   cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .latest-post .content-date {
